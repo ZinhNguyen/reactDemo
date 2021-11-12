@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {Component} from 'react';
 import {
   View,
@@ -31,7 +32,7 @@ class MhtinhTong extends Component {
             <Text>So a</Text>
           </View>
           <View style={{flex: 4}}>
-            <TextInput style={[style.yellow]} onChangeText={this.thaydoisoa}/>
+            <TextInput style={[style.yellow]} onChangeText={this.thaydoisoa} />
           </View>
         </View>
         <View style={[style.row]}>
@@ -39,7 +40,7 @@ class MhtinhTong extends Component {
             <Text>So b</Text>
           </View>
           <View style={{flex: 4}}>
-            <TextInput style={[style.yellow]} onChangeText={this.thaydoisob}/>
+            <TextInput style={[style.yellow]} onChangeText={this.thaydoisob} />
           </View>
         </View>
         <View style={[style.row]}>
@@ -62,7 +63,6 @@ class MhtinhTong extends Component {
     );
   }
 }
-
 
 const style = StyleSheet.create({
   container: {
