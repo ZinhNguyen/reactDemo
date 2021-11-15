@@ -22,11 +22,12 @@ import ScrollView1 from './scrollview1';
 import ImageExample from './image_example';
 import HttpExample from './http_example';
 import ButtonExample from './button_Example';
-import FlatList from './mh_flatlist'
+import FlatList from './mh_flatlist';
+import SectList from './mh_sectlist';
 
 class MyApp extends Component {
   render() {
-    return <FlatList />
+    return <FlatList/>
   }
 }
 

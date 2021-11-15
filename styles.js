@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
   duongthang: {
     height: 1,
-    backgroundColor: 'red',
+    backgroundColor: 'blue',
     paddingTop: 2,
     marginTop: 25,
   },
@@ -24,5 +24,8 @@ const styles = StyleSheet.create({
     height: 100,
     resizeMode: 'cover',
   },
+  headerContainer:{
+    backgroundColor: 'cyan'
+  }
 });
 export default styles;
