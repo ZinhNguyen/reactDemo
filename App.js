@@ -8,26 +8,59 @@
 
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TextInput, Button} from 'react-native';
-import Flexbasic from './flexbasics';
-import Flex from './flex';
-import TableLayout from './TableLayout';
-import DemoProps from './demoProps';
+import Home from "./home";
 import Mhlogin from './mhlogin';
-import Mhtinhtong from './mhtinhtong';
-import App from './todoApp';
-import List from './List';
-import Input from './input';
-import ScrollView from './scrollview';
-import ScrollView1 from './scrollview1';
-import ImageExample from './image_example';
-import HttpExample from './http_example';
-import ButtonExample from './button_Example';
-import FlatList from './mh_flatlist';
-import SectList from './mh_sectlist';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Mh_flatlist, { mh_flatlist } from './mh_flatlist';
+import Mh_sectlist from './mh_sectlist';
+
+const Stack=createStackNavigator();
 
 class MyApp extends Component {
   render() {
-    return <FlatList/>
+    return (
+      <>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName='Home'
+            options={{
+              headerTitleAlign: 'center',
+            }}
+        >
+          <Stack.Screen
+            name='Home'
+            component={Home}
+            options={{
+              headerTitleAlign:'center',
+            }}
+            />
+          <Stack.Screen
+            name='MhLogin'
+            component={Mhlogin}
+            options={{
+              headerTitleAlign:'center',
+            }}
+            />
+          <Stack.Screen
+            name='MhFlat'
+            component={Mh_flatlist}
+            options={{
+              headerTitleAlign:'center',
+            }}
+            />
+           <Stack.Screen
+            name='MhSect'
+            component={Mh_sectlist}
+            options={{
+              headerTitleAlign:'center',
+            }}
+            />
+            </Stack.Navigator>           
+      </NavigationContainer>
+      </>
+    )
   }
 }
 
