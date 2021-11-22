@@ -1,16 +1,45 @@
-import React from "react"
-import {Text, Image, View} from "react-native";
+/* eslint-disable prettier/prettier */
+import React from "react";
+import {Text, Image, View, Button} from "react-native";
+import { useNavigation } from "@react-navigation/core";
 
-const Home = (pros) => {
-    console.log(pros.name, pros.age)
+const Home = () => {
+    const navigation = useNavigation();
     return(
         <View style={{flexDirection:'column'}}>
-            <Text>{pros.name}</Text>
-            <Image
-            style={{width:500,height:500}}
-             source ={require('./assets/vungTau.jpg')} 
-             />
-        </View>
+           
+            <Button
+            onPress={()=> navigation.navigate('Detail', {username: 'vntan', phone:'0908290030'})}
+            title="Detail"
+            color="blue"
+            />
+            <Button
+            onPress={()=> navigation.navigate('MhFlat')}
+            title="Flat List"
+            color="blue"
+            />
+            <Button
+            onPress={()=> navigation.navigate('MhSect')}
+            title="Section List"
+            color="blue"
+            />
+            <Button
+            onPress={()=> navigation.navigate('FinalMain')}
+            title="Final Main"
+            color="blue"
+            />
+            <Button
+            onPress={()=> navigation.navigate('FinalLogin')}
+            title="Final Login"
+            color="blue"
+            />
+            <Button
+            onPress={()=> navigation.navigate('FinalSignin')}
+            title="Final Signin"
+            color="blue"
+            />            
+            </View>
     );
 }
-export default Home
+const gioithieu="Ung dung gioi thieu va Huong dan cam hoa"
+export default Home;
