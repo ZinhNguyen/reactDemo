@@ -28,6 +28,7 @@ export class final_signin extends Component {
                     <TextInput
                         placeholder="Nhập Email"
                         style={Styles.login}
+                        keyboardType="email-address"
                     />
                 </View>
                 <View>
@@ -41,7 +42,6 @@ export class final_signin extends Component {
                     <TextInput
                         placeholder="Nhập Ngày sinh"
                         style={Styles.login}
-                        
                     />
                 </View>
                 <TouchableOpacity
