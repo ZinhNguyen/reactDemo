@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 import { color } from 'react-native-reanimated';
 const final_style = StyleSheet.create({
   container:{
-   flex: 1
+   flex: 1,
   },
   header: {
     flex: 1,
@@ -15,14 +15,15 @@ const final_style = StyleSheet.create({
   body: {
     flex: 8,
     marginTop: 55,
-    position: 'relative'
+    position: 'relative',
+    marginBottom: 60,
   },  
   footer: {
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'deepskyblue',
     position: 'absolute',
-    marginTop: 545,
+    marginTop: 600,
     paddingTop: 15,
     paddingBottom: 15,
   },

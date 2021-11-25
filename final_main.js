@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Text, View, ImageBackground, Image, TextInput, ScrollView, Button } from 'react-native'
 import Styles from './final_style'
 import Mh_sectlist from './mh_sectlist'
+import Mh_loaihoa from './mh_loaihoa'
 import Icon from 'react-native-ico-material-design'
 
 export class final_main extends Component {

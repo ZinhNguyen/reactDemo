@@ -17,7 +17,7 @@ const Mh_LoaiHoa=()=>{
             ItemSeparatorComponent={Duongcach}
             pagingEnabled={true}
             ListHeaderComponent={THDautrang}
-            ListFooterComponent={Cuoitrang}
+            //ListFooterComponent={Cuoitrang}
             />
         )
 
@@ -54,10 +54,10 @@ function THDautrang() {
   );
 }
 
-function Cuoitrang() {
-  return (
-    <Dautrang image={require('./assets/vungTau.jpg')}/>
-  );
-}
+// function Cuoitrang() {
+//   return (
+//     <Dautrang image={require('./assets/vungTau.jpg')}/>
+//   );
+// }
 }
 export default Mh_LoaiHoa;

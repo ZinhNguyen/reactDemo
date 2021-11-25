@@ -19,6 +19,7 @@ class mh_sectlist extends Component{
                 ItemSeparatorComponent={Duong}
                 ListHeaderComponent={Dautrang}
                 ListFooterComponent={Cuoitrang}
+                
                 />
             </View>
         )

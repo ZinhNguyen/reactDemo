@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, TextInput, Button} from 'react-native';
+import {Text, View, StyleSheet, TextInput, Button, Animated} from 'react-native';
 import Home from "./home";
 import Detail from './details';
 import 'react-native-gesture-handler';
@@ -41,6 +41,7 @@ class MyApp extends Component {
             component={Mh_LoaiHoa}
             options={{
               headerTitleAlign:'center',
+              
             }}
             />
           <Stack.Screen
@@ -48,6 +49,7 @@ class MyApp extends Component {
             component={Home}
             options={{
               headerTitleAlign:'center',
+              
             }}
             />
           <Stack.Screen
@@ -55,6 +57,7 @@ class MyApp extends Component {
             component={Mh_Hoa}
             options={{
               headerTitleAlign:'center',
+              
             }}
             />
           <Stack.Screen
@@ -76,6 +79,9 @@ class MyApp extends Component {
             component={FinalMain}
             options={{
               headerTitleAlign:'center',
+              headerTransparent: 'true',
+              title: '',
+              headerLeft: null,
             }}
             />
            <Stack.Screen
