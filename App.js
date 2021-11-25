@@ -18,6 +18,8 @@ import Mh_sectlist from './mh_sectlist';
 import FinalMain from './final_main';
 import FinalLogin from './final_login';
 import FinalSignin from './final_signin';
+import Mh_LoaiHoa from './mh_loaihoa';
+import Mh_Hoa from './mh_hoa';
 
 
 
@@ -29,11 +31,18 @@ class MyApp extends Component {
       <>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName='Home'
+          initialRouteName='Loaihoa'
             options={{
               headerTitleAlign: 'center',
             }}
         >
+          <Stack.Screen
+            name='Loaihoa'
+            component={Mh_LoaiHoa}
+            options={{
+              headerTitleAlign:'center',
+            }}
+            />
           <Stack.Screen
             name='Home'
             component={Home}
@@ -43,7 +52,7 @@ class MyApp extends Component {
             />
           <Stack.Screen
             name='Detail'
-            component={Detail}
+            component={Mh_Hoa}
             options={{
               headerTitleAlign:'center',
             }}
